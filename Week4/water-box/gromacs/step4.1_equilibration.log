@@ -985,3 +985,102 @@ Writing checkpoint, step 44300 at Thu Oct  5 16:07:55 2023
    Total Energy  Conserved En.    Temperature Pressure (bar)
    -1.32637e+05   -1.54890e+05    2.97070e+02   -1.09107e+03
 
+           Step           Time
+          71000       71.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68140e+04   -1.78723e+05    5.85112e+02   -1.61324e+05    2.91801e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32144e+05   -1.54914e+05    3.01625e+02   -1.26188e+03
+
+           Step           Time
+          72000       72.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66740e+04   -1.78349e+05    5.28454e+02   -1.61146e+05    2.88794e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32267e+05   -1.54921e+05    2.98517e+02   -1.31513e+03
+
+           Step           Time
+          73000       73.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68499e+04   -1.78785e+05    5.76329e+02   -1.61359e+05    2.88060e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32553e+05   -1.54965e+05    2.97758e+02   -1.28050e+03
+
+           Step           Time
+          74000       74.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.72678e+04   -1.79247e+05    5.20491e+02   -1.61459e+05    2.91678e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32291e+05   -1.54925e+05    3.01498e+02   -1.07400e+03
+
+           Step           Time
+          75000       75.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.70760e+04   -1.78594e+05    5.91207e+02   -1.60926e+05    2.90953e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.31831e+05   -1.54956e+05    3.00748e+02   -1.10468e+03
+
+           Step           Time
+          76000       76.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.74645e+04   -1.79150e+05    5.70083e+02   -1.61116e+05    2.89136e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32202e+05   -1.54902e+05    2.98871e+02   -9.53990e+02
+
+           Step           Time
+          77000       77.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.70962e+04   -1.79353e+05    5.70861e+02   -1.61686e+05    2.91077e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32578e+05   -1.54963e+05    3.00876e+02   -1.21005e+03
+
+           Step           Time
+          78000       78.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65041e+04   -1.77618e+05    5.84419e+02   -1.60530e+05    2.84604e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32069e+05   -1.54979e+05    2.94186e+02   -1.39157e+03
+
+           Step           Time
+          79000       79.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68912e+04   -1.78698e+05    5.47817e+02   -1.61259e+05    2.89496e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32309e+05   -1.54955e+05    2.99242e+02   -1.24640e+03
+
+           Step           Time
+          80000       80.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.64891e+04   -1.78061e+05    5.27472e+02   -1.61044e+05    2.93144e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.31730e+05   -1.54944e+05    3.03014e+02   -1.37700e+03
+
+           Step           Time
+          81000       81.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68778e+04   -1.78050e+05    5.50764e+02   -1.60622e+05    2.95980e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.31024e+05   -1.54900e+05    3.05944e+02   -1.13373e+03
+
