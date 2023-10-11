@@ -1,0 +1,1376 @@
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step4.0_minimization.mdp -o step4.0_minimization.tpr -c step3_input.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 2
+
+Setting the LD random seed to 324686410
+Generated 9 of the 10 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 10 of the 10 1-4 parameter combinations
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Excluding 1 bonded neighbours molecule type 'SOD'
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
+
+WARNING 1 [file topol.top, line 24]:
+  The following macros were defined in the 'define' mdp field with the -D
+  prefix, but were not used in the topology:
+      POSRES_FC_SC
+      POSRES
+      POSRES_FC_BB
+  If you haven't made a spelling error, either use the macro you defined,
+  or don't define the macro
+
+Number of degrees of freedom in T-Coupling group rest is 23271.00
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 42x42x42, spacing 0.119 0.119 0.119
+Estimate for the relative computational load of the PME mesh part: 0.22
+This run will generate roughly 1 Mb of data
+
+There was 1 warning
+
+GROMACS reminds you: "On the East coast, a purple patch, to show where the jolly pioneers of progress drink the jolly lager-beer" (Joseph Conrad)
+
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.0_minimization
+
+Reading file step4.0_minimization.tpr, VERSION 2020.4 (single precision)
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.86987e+05 Fmax= 4.27314e+02, atom= 636
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 1 steps
+Potential Energy  = -1.8698736e+05
+Maximum force     =  4.2731412e+02 on atom 636
+Norm of force     =  5.3149008e+01
+
+GROMACS reminds you: "Forcefields are like dating; things go fine for a while and then sometimes it goes really bad." (Alex MacKerell)
+
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step4.1_equilibration.mdp -o step4.1_equilibration.tpr -c step4.0_minimization.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 2
+
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+
+NOTE 1 [file step4.1_equilibration.mdp]:
+  leapfrog does not yet support Nose-Hoover chains, nhchainlength reset to 1
+
+Setting the LD random seed to 785337648
+Generated 9 of the 10 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 10 of the 10 1-4 parameter combinations
+Excluding 1 bonded neighbours molecule type 'SOD'
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Excluding 1 bonded neighbours molecule type 'CLA'
+Excluding 2 bonded neighbours molecule type 'TIP3'
+
+WARNING 1 [file topol.top, line 24]:
+  The following macros were defined in the 'define' mdp field with the -D
+  prefix, but were not used in the topology:
+      POSRES_FC_SC
+      POSRES
+      POSRES_FC_BB
+  If you haven't made a spelling error, either use the macro you defined,
+  or don't define the macro
+
+Setting gen_seed to -1584562542
+Velocities were taken from a Maxwell distribution at 300 K
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Number of degrees of freedom in T-Coupling group SOLV is 23271.00
+Calculated rlist for 1x1 atom pair-list as 1.238 nm, buffer size 0.038 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.200 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 42x42x42, spacing 0.119 0.119 0.119
+Estimate for the relative computational load of the PME mesh part: 0.24
+This run will generate roughly 10 Mb of data
+
+There was 1 note
+
+There was 1 warning
+
+GROMACS reminds you: "The greatest shortcoming of the human race is our inability to understand the exponential function." (Albert Bartlett)
+
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.1_equilibration
+
+Reading file step4.1_equilibration.tpr, VERSION 2020.4 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.2 to 1.297
+
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+starting mdrun 'Title'
+125000 steps,    125.0 ps.
+step 0step 100, will finish Fri Oct  6 11:04:16 2023step 200, will finish Fri Oct  6 11:04:02 2023step 300, will finish Fri Oct  6 11:03:59 2023step 400, will finish Fri Oct  6 11:03:57 2023step 500, will finish Fri Oct  6 11:03:59 2023step 600, will finish Fri Oct  6 11:04:02 2023step 700, will finish Fri Oct  6 11:04:01 2023step 800, will finish Fri Oct  6 11:04:03 2023step 900, will finish Fri Oct  6 11:04:05 2023step 1000, will finish Fri Oct  6 11:04:05 2023step 1100, will finish Fri Oct  6 11:04:04 2023step 1200, will finish Fri Oct  6 11:04:04 2023step 1300, will finish Fri Oct  6 11:04:02 2023step 1400, will finish Fri Oct  6 11:04:00 2023step 1500, will finish Fri Oct  6 11:03:59 2023step 1600, will finish Fri Oct  6 11:03:58 2023step 1700, will finish Fri Oct  6 11:03:57 2023step 1800, will finish Fri Oct  6 11:03:57 2023step 1900, will finish Fri Oct  6 11:03:55 2023step 2000, will finish Fri Oct  6 11:03:55 2023step 2100, will finish Fri Oct  6 11:03:54 2023step 2200, will finish Fri Oct  6 11:03:53 2023step 2300, will finish Fri Oct  6 11:03:53 2023step 2400, will finish Fri Oct  6 11:03:52 2023step 2500, will finish Fri Oct  6 11:03:52 2023step 2600, will finish Fri Oct  6 11:03:51 2023step 2700, will finish Fri Oct  6 11:03:51 2023step 2800, will finish Fri Oct  6 11:03:50 2023step 2900, will finish Fri Oct  6 11:03:50 2023step 3000, will finish Fri Oct  6 11:03:49 2023step 3100, will finish Fri Oct  6 11:03:49 2023step 3200, will finish Fri Oct  6 11:03:49 2023step 3300, will finish Fri Oct  6 11:03:48 2023step 3400, will finish Fri Oct  6 11:03:48 2023step 3500, will finish Fri Oct  6 11:03:49 2023step 3600, will finish Fri Oct  6 11:03:49 2023step 3700, will finish Fri Oct  6 11:03:50 2023step 3800, will finish Fri Oct  6 11:03:51 2023step 3900, will finish Fri Oct  6 11:03:51 2023step 4000, will finish Fri Oct  6 11:03:51 2023step 4100, will finish Fri Oct  6 11:03:52 2023step 4200, will finish Fri Oct  6 11:03:51 2023step 4300, will finish Fri Oct  6 11:03:51 2023step 4400, will finish Fri Oct  6 11:03:51 2023step 4500, will finish Fri Oct  6 11:03:50 2023step 4600, will finish Fri Oct  6 11:03:49 2023step 4700, will finish Fri Oct  6 11:03:49 2023step 4800, will finish Fri Oct  6 11:03:48 2023step 4900, will finish Fri Oct  6 11:03:48 2023step 5000, will finish Fri Oct  6 11:03:49 2023step 5100, will finish Fri Oct  6 11:03:49 2023step 5200, will finish Fri Oct  6 11:03:49 2023step 5300, will finish Fri Oct  6 11:03:49 2023step 5400, will finish Fri Oct  6 11:03:49 2023step 5500, will finish Fri Oct  6 11:03:49 2023step 5600, will finish Fri Oct  6 11:03:48 2023step 5700, will finish Fri Oct  6 11:03:48 2023step 5800, will finish Fri Oct  6 11:03:48 2023step 5900, will finish Fri Oct  6 11:03:47 2023step 6000, will finish Fri Oct  6 11:03:47 2023step 6100, will finish Fri Oct  6 11:03:47 2023step 6200, will finish Fri Oct  6 11:03:47 2023step 6300, will finish Fri Oct  6 11:03:48 2023step 6400, will finish Fri Oct  6 11:03:48 2023step 6500, will finish Fri Oct  6 11:03:49 2023step 6600, will finish Fri Oct  6 11:03:49 2023step 6700, will finish Fri Oct  6 11:03:49 2023step 6800, will finish Fri Oct  6 11:03:50 2023step 6900, will finish Fri Oct  6 11:03:50 2023step 7000, will finish Fri Oct  6 11:03:50 2023step 7100, will finish Fri Oct  6 11:03:50 2023step 7200, will finish Fri Oct  6 11:03:50 2023step 7300, will finish Fri Oct  6 11:03:50 2023step 7400, will finish Fri Oct  6 11:03:50 2023step 7500, will finish Fri Oct  6 11:03:49 2023step 7600, will finish Fri Oct  6 11:03:49 2023step 7700, will finish Fri Oct  6 11:03:49 2023step 7800, will finish Fri Oct  6 11:03:49 2023step 7900, will finish Fri Oct  6 11:03:49 2023step 8000, will finish Fri Oct  6 11:03:49 2023step 8100, will finish Fri Oct  6 11:03:49 2023step 8200, will finish Fri Oct  6 11:03:49 2023step 8300, will finish Fri Oct  6 11:03:49 2023step 8400, will finish Fri Oct  6 11:03:48 2023step 8500, will finish Fri Oct  6 11:03:48 2023step 8600, will finish Fri Oct  6 11:03:48 2023step 8700, will finish Fri Oct  6 11:03:48 2023step 8800, will finish Fri Oct  6 11:03:48 2023step 8900, will finish Fri Oct  6 11:03:48 2023step 9000, will finish Fri Oct  6 11:03:48 2023step 9100, will finish Fri Oct  6 11:03:48 2023step 9200, will finish Fri Oct  6 11:03:48 2023step 9300, will finish Fri Oct  6 11:03:49 2023step 9400, will finish Fri Oct  6 11:03:49 2023step 9500, will finish Fri Oct  6 11:03:49 2023step 9600, will finish Fri Oct  6 11:03:49 2023step 9700, will finish Fri Oct  6 11:03:49 2023step 9800, will finish Fri Oct  6 11:03:49 2023step 9900, will finish Fri Oct  6 11:03:49 2023step 10000, will finish Fri Oct  6 11:03:50 2023step 10100, will finish Fri Oct  6 11:03:50 2023step 10200, will finish Fri Oct  6 11:03:49 2023step 10300, will finish Fri Oct  6 11:03:50 2023step 10400, will finish Fri Oct  6 11:03:49 2023step 10500, will finish Fri Oct  6 11:03:49 2023step 10600, will finish Fri Oct  6 11:03:49 2023step 10700, will finish Fri Oct  6 11:03:49 2023step 10800, will finish Fri Oct  6 11:03:49 2023step 10900, will finish Fri Oct  6 11:03:49 2023step 11000, will finish Fri Oct  6 11:03:49 2023step 11100, will finish Fri Oct  6 11:03:48 2023step 11200, will finish Fri Oct  6 11:03:48 2023step 11300, will finish Fri Oct  6 11:03:48 2023step 11400, will finish Fri Oct  6 11:03:48 2023step 11500, will finish Fri Oct  6 11:03:48 2023step 11600, will finish Fri Oct  6 11:03:48 2023step 11700, will finish Fri Oct  6 11:03:48 2023step 11800, will finish Fri Oct  6 11:03:48 2023step 11900, will finish Fri Oct  6 11:03:48 2023step 12000, will finish Fri Oct  6 11:03:48 2023step 12100, will finish Fri Oct  6 11:03:49 2023step 12200, will finish Fri Oct  6 11:03:49 2023step 12300, will finish Fri Oct  6 11:03:49 2023step 12400, will finish Fri Oct  6 11:03:49 2023step 12500, will finish Fri Oct  6 11:03:49 2023step 12600, will finish Fri Oct  6 11:03:49 2023step 12700, will finish Fri Oct  6 11:03:49 2023step 12800, will finish Fri Oct  6 11:03:49 2023step 12900, will finish Fri Oct  6 11:03:49 2023step 13000, will finish Fri Oct  6 11:03:49 2023step 13100, will finish Fri Oct  6 11:03:49 2023step 13200, will finish Fri Oct  6 11:03:49 2023step 13300, will finish Fri Oct  6 11:03:49 2023step 13400, will finish Fri Oct  6 11:03:49 2023step 13500, will finish Fri Oct  6 11:03:49 2023step 13600, will finish Fri Oct  6 11:03:49 2023step 13700, will finish Fri Oct  6 11:03:49 2023step 13800, will finish Fri Oct  6 11:03:49 2023step 13900, will finish Fri Oct  6 11:03:49 2023step 14000, will finish Fri Oct  6 11:03:49 2023step 14100, will finish Fri Oct  6 11:03:49 2023step 14200, will finish Fri Oct  6 11:03:49 2023step 14300, will finish Fri Oct  6 11:03:48 2023step 14400, will finish Fri Oct  6 11:03:48 2023step 14500, will finish Fri Oct  6 11:03:48 2023step 14600, will finish Fri Oct  6 11:03:48 2023step 14700, will finish Fri Oct  6 11:03:49 2023step 14800, will finish Fri Oct  6 11:03:49 2023step 14900, will finish Fri Oct  6 11:03:49 2023step 15000, will finish Fri Oct  6 11:03:49 2023step 15100, will finish Fri Oct  6 11:03:49 2023step 15200, will finish Fri Oct  6 11:03:50 2023step 15300, will finish Fri Oct  6 11:03:50 2023step 15400, will finish Fri Oct  6 11:03:50 2023step 15500, will finish Fri Oct  6 11:03:50 2023step 15600, will finish Fri Oct  6 11:03:50 2023step 15700, will finish Fri Oct  6 11:03:50 2023step 15800, will finish Fri Oct  6 11:03:50 2023step 15900, will finish Fri Oct  6 11:03:50 2023step 16000, will finish Fri Oct  6 11:03:50 2023step 16100, will finish Fri Oct  6 11:03:50 2023step 16200, will finish Fri Oct  6 11:03:51 2023step 16300, will finish Fri Oct  6 11:03:51 2023step 16400, will finish Fri Oct  6 11:03:51 2023step 16500, will finish Fri Oct  6 11:03:51 2023step 16600, will finish Fri Oct  6 11:03:51 2023step 16700, will finish Fri Oct  6 11:03:51 2023step 16800, will finish Fri Oct  6 11:03:51 2023step 16900, will finish Fri Oct  6 11:03:51 2023step 17000, will finish Fri Oct  6 11:03:51 2023step 17100, will finish Fri Oct  6 11:03:52 2023step 17200, will finish Fri Oct  6 11:03:52 2023step 17300, will finish Fri Oct  6 11:03:52 2023step 17400, will finish Fri Oct  6 11:03:52 2023step 17500, will finish Fri Oct  6 11:03:52 2023step 17600, will finish Fri Oct  6 11:03:52 2023step 17700, will finish Fri Oct  6 11:03:52 2023step 17800, will finish Fri Oct  6 11:03:52 2023step 17900, will finish Fri Oct  6 11:03:52 2023step 18000, will finish Fri Oct  6 11:03:52 2023step 18100, will finish Fri Oct  6 11:03:52 2023step 18200, will finish Fri Oct  6 11:03:53 2023step 18300, will finish Fri Oct  6 11:03:52 2023step 18400, will finish Fri Oct  6 11:03:52 2023step 18500, will finish Fri Oct  6 11:03:52 2023step 18600, will finish Fri Oct  6 11:03:52 2023step 18700, will finish Fri Oct  6 11:03:52 2023step 18800, will finish Fri Oct  6 11:03:52 2023step 18900, will finish Fri Oct  6 11:03:52 2023step 19000, will finish Fri Oct  6 11:03:52 2023step 19100, will finish Fri Oct  6 11:03:52 2023step 19200, will finish Fri Oct  6 11:03:52 2023step 19300, will finish Fri Oct  6 11:03:52 2023step 19400, will finish Fri Oct  6 11:03:51 2023step 19500, will finish Fri Oct  6 11:03:51 2023step 19600, will finish Fri Oct  6 11:03:51 2023step 19700, will finish Fri Oct  6 11:03:51 2023step 19800, will finish Fri Oct  6 11:03:51 2023step 19900, will finish Fri Oct  6 11:03:51 2023step 20000, will finish Fri Oct  6 11:03:52 2023step 20100, will finish Fri Oct  6 11:03:52 2023step 20200, will finish Fri Oct  6 11:03:52 2023step 20300, will finish Fri Oct  6 11:03:52 2023step 20400, will finish Fri Oct  6 11:03:52 2023step 20500, will finish Fri Oct  6 11:03:52 2023step 20600, will finish Fri Oct  6 11:03:52 2023step 20700, will finish Fri Oct  6 11:03:52 2023step 20800, will finish Fri Oct  6 11:03:52 2023step 20900, will finish Fri Oct  6 11:03:52 2023step 21000, will finish Fri Oct  6 11:03:52 2023step 21100, will finish Fri Oct  6 11:03:52 2023step 21200, will finish Fri Oct  6 11:03:52 2023step 21300, will finish Fri Oct  6 11:03:52 2023step 21400, will finish Fri Oct  6 11:03:52 2023step 21500, will finish Fri Oct  6 11:03:52 2023step 21600, will finish Fri Oct  6 11:03:52 2023step 21700, will finish Fri Oct  6 11:03:52 2023step 21800, will finish Fri Oct  6 11:03:52 2023step 21900, will finish Fri Oct  6 11:03:52 2023step 22000, will finish Fri Oct  6 11:03:52 2023step 22100, will finish Fri Oct  6 11:03:52 2023step 22200, will finish Fri Oct  6 11:03:52 2023step 22300, will finish Fri Oct  6 11:03:51 2023step 22400, will finish Fri Oct  6 11:03:51 2023step 22500, will finish Fri Oct  6 11:03:51 2023step 22600, will finish Fri Oct  6 11:03:51 2023step 22700, will finish Fri Oct  6 11:03:51 2023step 22800, will finish Fri Oct  6 11:03:51 2023step 22900, will finish Fri Oct  6 11:03:51 2023step 23000, will finish Fri Oct  6 11:03:51 2023step 23100, will finish Fri Oct  6 11:03:51 2023step 23200, will finish Fri Oct  6 11:03:51 2023step 23300, will finish Fri Oct  6 11:03:51 2023step 23400, will finish Fri Oct  6 11:03:51 2023step 23500, will finish Fri Oct  6 11:03:51 2023step 23600, will finish Fri Oct  6 11:03:51 2023step 23700, will finish Fri Oct  6 11:03:51 2023step 23800, will finish Fri Oct  6 11:03:51 2023step 23900, will finish Fri Oct  6 11:03:51 2023step 24000, will finish Fri Oct  6 11:03:51 2023step 24100, will finish Fri Oct  6 11:03:51 2023step 24200, will finish Fri Oct  6 11:03:51 2023step 24300, will finish Fri Oct  6 11:03:51 2023step 24400, will finish Fri Oct  6 11:03:51 2023step 24500, will finish Fri Oct  6 11:03:51 2023step 24600, will finish Fri Oct  6 11:03:51 2023step 24700, will finish Fri Oct  6 11:03:51 2023step 24800, will finish Fri Oct  6 11:03:51 2023step 24900, will finish Fri Oct  6 11:03:51 2023step 25000, will finish Fri Oct  6 11:03:51 2023step 25100, will finish Fri Oct  6 11:03:51 2023step 25200, will finish Fri Oct  6 11:03:51 2023step 25300, will finish Fri Oct  6 11:03:51 2023step 25400, will finish Fri Oct  6 11:03:51 2023step 25500, will finish Fri Oct  6 11:03:51 2023step 25600, will finish Fri Oct  6 11:03:51 2023step 25700, will finish Fri Oct  6 11:03:51 2023step 25800, will finish Fri Oct  6 11:03:51 2023step 25900, will finish Fri Oct  6 11:03:51 2023step 26000, will finish Fri Oct  6 11:03:51 2023step 26100, will finish Fri Oct  6 11:03:51 2023step 26200, will finish Fri Oct  6 11:03:51 2023step 26300, will finish Fri Oct  6 11:03:51 2023step 26400, will finish Fri Oct  6 11:03:51 2023step 26500, will finish Fri Oct  6 11:03:51 2023step 26600, will finish Fri Oct  6 11:03:51 2023step 26700, will finish Fri Oct  6 11:03:51 2023step 26800, will finish Fri Oct  6 11:03:51 2023step 26900, will finish Fri Oct  6 11:03:51 2023step 27000, will finish Fri Oct  6 11:03:51 2023step 27100, will finish Fri Oct  6 11:03:51 2023step 27200, will finish Fri Oct  6 11:03:51 2023step 27300, will finish Fri Oct  6 11:03:51 2023step 27400, will finish Fri Oct  6 11:03:51 2023step 27500, will finish Fri Oct  6 11:03:51 2023step 27600, will finish Fri Oct  6 11:03:51 2023step 27700, will finish Fri Oct  6 11:03:51 2023step 27800, will finish Fri Oct  6 11:03:51 2023step 27900, will finish Fri Oct  6 11:03:51 2023step 28000, will finish Fri Oct  6 11:03:51 2023step 28100, will finish Fri Oct  6 11:03:51 2023step 28200, will finish Fri Oct  6 11:03:51 2023step 28300, will finish Fri Oct  6 11:03:51 2023step 28400, will finish Fri Oct  6 11:03:51 2023step 28500, will finish Fri Oct  6 11:03:51 2023step 28600, will finish Fri Oct  6 11:03:51 2023step 28700, will finish Fri Oct  6 11:03:51 2023step 28800, will finish Fri Oct  6 11:03:51 2023step 28900, will finish Fri Oct  6 11:03:51 2023step 29000, will finish Fri Oct  6 11:03:51 2023step 29100, will finish Fri Oct  6 11:03:51 2023step 29200, will finish Fri Oct  6 11:03:51 2023step 29300, will finish Fri Oct  6 11:03:51 2023step 29400, will finish Fri Oct  6 11:03:51 2023step 29500, will finish Fri Oct  6 11:03:51 2023step 29600, will finish Fri Oct  6 11:03:51 2023step 29700, will finish Fri Oct  6 11:03:51 2023step 29800, will finish Fri Oct  6 11:03:51 2023step 29900, will finish Fri Oct  6 11:03:51 2023step 30000, will finish Fri Oct  6 11:03:51 2023step 30100, will finish Fri Oct  6 11:03:51 2023step 30200, will finish Fri Oct  6 11:03:51 2023step 30300, will finish Fri Oct  6 11:03:51 2023step 30400, will finish Fri Oct  6 11:03:51 2023step 30500, will finish Fri Oct  6 11:03:51 2023step 30600, will finish Fri Oct  6 11:03:51 2023step 30700, will finish Fri Oct  6 11:03:51 2023step 30800, will finish Fri Oct  6 11:03:51 2023step 30900, will finish Fri Oct  6 11:03:51 2023step 31000, will finish Fri Oct  6 11:03:51 2023step 31100, will finish Fri Oct  6 11:03:51 2023step 31200, will finish Fri Oct  6 11:03:51 2023step 31300, will finish Fri Oct  6 11:03:51 2023step 31400, will finish Fri Oct  6 11:03:51 2023step 31500, will finish Fri Oct  6 11:03:51 2023step 31600, will finish Fri Oct  6 11:03:51 2023step 31700, will finish Fri Oct  6 11:03:51 2023step 31800, will finish Fri Oct  6 11:03:51 2023step 31900, will finish Fri Oct  6 11:03:51 2023step 32000, will finish Fri Oct  6 11:03:51 2023step 32100, will finish Fri Oct  6 11:03:51 2023step 32200, will finish Fri Oct  6 11:03:51 2023step 32300, will finish Fri Oct  6 11:03:51 2023step 32400, will finish Fri Oct  6 11:03:51 2023step 32500, will finish Fri Oct  6 11:03:51 2023step 32600, will finish Fri Oct  6 11:03:51 2023step 32700, will finish Fri Oct  6 11:03:51 2023step 32800, will finish Fri Oct  6 11:03:51 2023step 32900, will finish Fri Oct  6 11:03:51 2023step 33000, will finish Fri Oct  6 11:03:51 2023step 33100, will finish Fri Oct  6 11:03:51 2023step 33200, will finish Fri Oct  6 11:03:51 2023step 33300, will finish Fri Oct  6 11:03:51 2023step 33400, will finish Fri Oct  6 11:03:51 2023step 33500, will finish Fri Oct  6 11:03:51 2023step 33600, will finish Fri Oct  6 11:03:51 2023step 33700, will finish Fri Oct  6 11:03:51 2023step 33800, will finish Fri Oct  6 11:03:51 2023step 33900, will finish Fri Oct  6 11:03:51 2023step 34000, will finish Fri Oct  6 11:03:51 2023step 34100, will finish Fri Oct  6 11:03:51 2023step 34200, will finish Fri Oct  6 11:03:51 2023step 34300, will finish Fri Oct  6 11:03:51 2023step 34400, will finish Fri Oct  6 11:03:51 2023step 34500, will finish Fri Oct  6 11:03:51 2023step 34600, will finish Fri Oct  6 11:03:51 2023step 34700, will finish Fri Oct  6 11:03:51 2023step 34800, will finish Fri Oct  6 11:03:51 2023step 34900, will finish Fri Oct  6 11:03:51 2023step 35000, will finish Fri Oct  6 11:03:52 2023step 35100, will finish Fri Oct  6 11:03:52 2023step 35200, will finish Fri Oct  6 11:03:52 2023step 35300, will finish Fri Oct  6 11:03:51 2023step 35400, will finish Fri Oct  6 11:03:51 2023step 35500, will finish Fri Oct  6 11:03:51 2023step 35600, will finish Fri Oct  6 11:03:51 2023step 35700, will finish Fri Oct  6 11:03:51 2023step 35800, will finish Fri Oct  6 11:03:51 2023step 35900, will finish Fri Oct  6 11:03:51 2023step 36000, will finish Fri Oct  6 11:03:51 2023step 36100, will finish Fri Oct  6 11:03:51 2023step 36200, will finish Fri Oct  6 11:03:51 2023step 36300, will finish Fri Oct  6 11:03:51 2023step 36400, will finish Fri Oct  6 11:03:51 2023step 36500, will finish Fri Oct  6 11:03:51 2023step 36600, will finish Fri Oct  6 11:03:51 2023step 36700, will finish Fri Oct  6 11:03:51 2023step 36800, will finish Fri Oct  6 11:03:51 2023step 36900, will finish Fri Oct  6 11:03:51 2023step 37000, will finish Fri Oct  6 11:03:51 2023step 37100, will finish Fri Oct  6 11:03:51 2023step 37200, will finish Fri Oct  6 11:03:51 2023step 37300, will finish Fri Oct  6 11:03:51 2023step 37400, will finish Fri Oct  6 11:03:52 2023step 37500, will finish Fri Oct  6 11:03:52 2023step 37600, will finish Fri Oct  6 11:03:52 2023step 37700, will finish Fri Oct  6 11:03:52 2023step 37800, will finish Fri Oct  6 11:03:52 2023step 37900, will finish Fri Oct  6 11:03:52 2023step 38000, will finish Fri Oct  6 11:03:52 2023step 38100, will finish Fri Oct  6 11:03:52 2023step 38200, will finish Fri Oct  6 11:03:52 2023step 38300, will finish Fri Oct  6 11:03:51 2023step 38400, will finish Fri Oct  6 11:03:51 2023step 38500, will finish Fri Oct  6 11:03:51 2023step 38600, will finish Fri Oct  6 11:03:51 2023step 38700, will finish Fri Oct  6 11:03:51 2023step 38800, will finish Fri Oct  6 11:03:51 2023step 38900, will finish Fri Oct  6 11:03:51 2023step 39000, will finish Fri Oct  6 11:03:51 2023step 39100, will finish Fri Oct  6 11:03:51 2023step 39200, will finish Fri Oct  6 11:03:51 2023step 39300, will finish Fri Oct  6 11:03:51 2023step 39400, will finish Fri Oct  6 11:03:51 2023step 39500, will finish Fri Oct  6 11:03:51 2023step 39600, will finish Fri Oct  6 11:03:51 2023step 39700, will finish Fri Oct  6 11:03:51 2023step 39800, will finish Fri Oct  6 11:03:51 2023step 39900, will finish Fri Oct  6 11:03:51 2023step 40000, will finish Fri Oct  6 11:03:52 2023step 40100, will finish Fri Oct  6 11:03:52 2023step 40200, will finish Fri Oct  6 11:03:52 2023step 40300, will finish Fri Oct  6 11:03:52 2023step 40400, will finish Fri Oct  6 11:03:52 2023step 40500, will finish Fri Oct  6 11:03:52 2023step 40600, will finish Fri Oct  6 11:03:52 2023step 40700, will finish Fri Oct  6 11:03:52 2023step 40800, will finish Fri Oct  6 11:03:52 2023step 40900, will finish Fri Oct  6 11:03:52 2023step 41000, will finish Fri Oct  6 11:03:52 2023step 41100, will finish Fri Oct  6 11:03:52 2023step 41200, will finish Fri Oct  6 11:03:52 2023step 41300, will finish Fri Oct  6 11:03:52 2023step 41400, will finish Fri Oct  6 11:03:52 2023step 41500, will finish Fri Oct  6 11:03:52 2023step 41600, will finish Fri Oct  6 11:03:52 2023step 41700, will finish Fri Oct  6 11:03:52 2023step 41800, will finish Fri Oct  6 11:03:52 2023step 41900, will finish Fri Oct  6 11:03:52 2023step 42000, will finish Fri Oct  6 11:03:52 2023step 42100, will finish Fri Oct  6 11:03:52 2023step 42200, will finish Fri Oct  6 11:03:51 2023step 42300, will finish Fri Oct  6 11:03:51 2023step 42400, will finish Fri Oct  6 11:03:51 2023step 42500, will finish Fri Oct  6 11:03:51 2023step 42600, will finish Fri Oct  6 11:03:51 2023step 42700, will finish Fri Oct  6 11:03:51 2023step 42800, will finish Fri Oct  6 11:03:51 2023step 42900, will finish Fri Oct  6 11:03:52 2023step 43000, will finish Fri Oct  6 11:03:52 2023step 43100, will finish Fri Oct  6 11:03:52 2023step 43200, will finish Fri Oct  6 11:03:52 2023step 43300, will finish Fri Oct  6 11:03:52 2023step 43400, will finish Fri Oct  6 11:03:52 2023step 43500, will finish Fri Oct  6 11:03:52 2023step 43600, will finish Fri Oct  6 11:03:52 2023step 43700, will finish Fri Oct  6 11:03:52 2023step 43800, will finish Fri Oct  6 11:03:52 2023step 43900, will finish Fri Oct  6 11:03:52 2023step 44000, will finish Fri Oct  6 11:03:51 2023step 44100, will finish Fri Oct  6 11:03:51 2023step 44200, will finish Fri Oct  6 11:03:51 2023step 44300, will finish Fri Oct  6 11:03:51 2023step 44400, will finish Fri Oct  6 11:03:52 2023step 44500, will finish Fri Oct  6 11:03:52 2023step 44600, will finish Fri Oct  6 11:03:52 2023step 44700, will finish Fri Oct  6 11:03:52 2023step 44800, will finish Fri Oct  6 11:03:52 2023step 44900, will finish Fri Oct  6 11:03:52 2023step 45000, will finish Fri Oct  6 11:03:52 2023step 45100, will finish Fri Oct  6 11:03:52 2023step 45200, will finish Fri Oct  6 11:03:52 2023step 45300, will finish Fri Oct  6 11:03:52 2023step 45400, will finish Fri Oct  6 11:03:52 2023step 45500, will finish Fri Oct  6 11:03:52 2023step 45600, will finish Fri Oct  6 11:03:52 2023step 45700, will finish Fri Oct  6 11:03:52 2023step 45800, will finish Fri Oct  6 11:03:52 2023step 45900, will finish Fri Oct  6 11:03:52 2023step 46000, will finish Fri Oct  6 11:03:52 2023step 46100, will finish Fri Oct  6 11:03:52 2023step 46200, will finish Fri Oct  6 11:03:52 2023step 46300, will finish Fri Oct  6 11:03:52 2023step 46400, will finish Fri Oct  6 11:03:52 2023step 46500, will finish Fri Oct  6 11:03:52 2023step 46600, will finish Fri Oct  6 11:03:52 2023step 46700, will finish Fri Oct  6 11:03:52 2023step 46800, will finish Fri Oct  6 11:03:52 2023step 46900, will finish Fri Oct  6 11:03:52 2023step 47000, will finish Fri Oct  6 11:03:52 2023step 47100, will finish Fri Oct  6 11:03:52 2023step 47200, will finish Fri Oct  6 11:03:52 2023step 47300, will finish Fri Oct  6 11:03:52 2023step 47400, will finish Fri Oct  6 11:03:52 2023step 47500, will finish Fri Oct  6 11:03:52 2023step 47600, will finish Fri Oct  6 11:03:52 2023step 47700, will finish Fri Oct  6 11:03:52 2023step 47800, will finish Fri Oct  6 11:03:52 2023step 47900, will finish Fri Oct  6 11:03:52 2023step 48000, will finish Fri Oct  6 11:03:52 2023step 48100, will finish Fri Oct  6 11:03:52 2023step 48200, will finish Fri Oct  6 11:03:52 2023step 48300, will finish Fri Oct  6 11:03:52 2023step 48400, will finish Fri Oct  6 11:03:52 2023step 48500, will finish Fri Oct  6 11:03:52 2023step 48600, will finish Fri Oct  6 11:03:52 2023step 48700, will finish Fri Oct  6 11:03:52 2023step 48800, will finish Fri Oct  6 11:03:52 2023step 48900, will finish Fri Oct  6 11:03:52 2023step 49000, will finish Fri Oct  6 11:03:52 2023step 49100, will finish Fri Oct  6 11:03:52 2023step 49200, will finish Fri Oct  6 11:03:52 2023step 49300, will finish Fri Oct  6 11:03:52 2023step 49400, will finish Fri Oct  6 11:03:52 2023step 49500, will finish Fri Oct  6 11:03:52 2023step 49600, will finish Fri Oct  6 11:03:52 2023step 49700, will finish Fri Oct  6 11:03:52 2023step 49800, will finish Fri Oct  6 11:03:52 2023step 49900, will finish Fri Oct  6 11:03:52 2023step 50000, will finish Fri Oct  6 11:03:52 2023step 50100, will finish Fri Oct  6 11:03:52 2023step 50200, will finish Fri Oct  6 11:03:52 2023step 50300, will finish Fri Oct  6 11:03:52 2023step 50400, will finish Fri Oct  6 11:03:52 2023step 50500, will finish Fri Oct  6 11:03:52 2023step 50600, will finish Fri Oct  6 11:03:52 2023step 50700, will finish Fri Oct  6 11:03:52 2023step 50800, will finish Fri Oct  6 11:03:52 2023step 50900, will finish Fri Oct  6 11:03:52 2023step 51000, will finish Fri Oct  6 11:03:52 2023step 51100, will finish Fri Oct  6 11:03:52 2023step 51200, will finish Fri Oct  6 11:03:52 2023step 51300, will finish Fri Oct  6 11:03:52 2023step 51400, will finish Fri Oct  6 11:03:52 2023step 51500, will finish Fri Oct  6 11:03:52 2023step 51600, will finish Fri Oct  6 11:03:52 2023step 51700, will finish Fri Oct  6 11:03:52 2023step 51800, will finish Fri Oct  6 11:03:52 2023step 51900, will finish Fri Oct  6 11:03:52 2023step 52000, will finish Fri Oct  6 11:03:52 2023step 52100, will finish Fri Oct  6 11:03:52 2023step 52200, will finish Fri Oct  6 11:03:52 2023step 52300, will finish Fri Oct  6 11:03:52 2023step 52400, will finish Fri Oct  6 11:03:52 2023step 52500, will finish Fri Oct  6 11:03:52 2023step 52600, will finish Fri Oct  6 11:03:52 2023step 52700, will finish Fri Oct  6 11:03:52 2023step 52800, will finish Fri Oct  6 11:03:52 2023step 52900, will finish Fri Oct  6 11:03:52 2023step 53000, will finish Fri Oct  6 11:03:52 2023step 53100, will finish Fri Oct  6 11:03:52 2023step 53200, will finish Fri Oct  6 11:03:52 2023step 53300, will finish Fri Oct  6 11:03:52 2023step 53400, will finish Fri Oct  6 11:03:52 2023step 53500, will finish Fri Oct  6 11:03:52 2023step 53600, will finish Fri Oct  6 11:03:52 2023step 53700, will finish Fri Oct  6 11:03:52 2023step 53800, will finish Fri Oct  6 11:03:52 2023step 53900, will finish Fri Oct  6 11:03:52 2023step 54000, will finish Fri Oct  6 11:03:52 2023step 54100, will finish Fri Oct  6 11:03:52 2023step 54200, will finish Fri Oct  6 11:03:52 2023step 54300, will finish Fri Oct  6 11:03:52 2023step 54400, will finish Fri Oct  6 11:03:52 2023step 54500, will finish Fri Oct  6 11:03:52 2023step 54600, will finish Fri Oct  6 11:03:52 2023step 54700, will finish Fri Oct  6 11:03:52 2023step 54800, will finish Fri Oct  6 11:03:51 2023step 54900, will finish Fri Oct  6 11:03:51 2023step 55000, will finish Fri Oct  6 11:03:51 2023step 55100, will finish Fri Oct  6 11:03:51 2023step 55200, will finish Fri Oct  6 11:03:51 2023step 55300, will finish Fri Oct  6 11:03:51 2023step 55400, will finish Fri Oct  6 11:03:51 2023step 55500, will finish Fri Oct  6 11:03:51 2023step 55600, will finish Fri Oct  6 11:03:51 2023step 55700, will finish Fri Oct  6 11:03:51 2023step 55800, will finish Fri Oct  6 11:03:51 2023step 55900, will finish Fri Oct  6 11:03:51 2023step 56000, will finish Fri Oct  6 11:03:51 2023step 56100, will finish Fri Oct  6 11:03:51 2023step 56200, will finish Fri Oct  6 11:03:51 2023step 56300, will finish Fri Oct  6 11:03:51 2023step 56400, will finish Fri Oct  6 11:03:51 2023step 56500, will finish Fri Oct  6 11:03:51 2023step 56600, will finish Fri Oct  6 11:03:51 2023step 56700, will finish Fri Oct  6 11:03:51 2023step 56800, will finish Fri Oct  6 11:03:51 2023step 56900, will finish Fri Oct  6 11:03:51 2023step 57000, will finish Fri Oct  6 11:03:52 2023step 57100, will finish Fri Oct  6 11:03:52 2023step 57200, will finish Fri Oct  6 11:03:52 2023step 57300, will finish Fri Oct  6 11:03:52 2023step 57400, will finish Fri Oct  6 11:03:52 2023step 57500, will finish Fri Oct  6 11:03:52 2023step 57600, will finish Fri Oct  6 11:03:52 2023step 57700, will finish Fri Oct  6 11:03:52 2023step 57800, will finish Fri Oct  6 11:03:52 2023step 57900, will finish Fri Oct  6 11:03:52 2023step 58000, will finish Fri Oct  6 11:03:51 2023step 58100, will finish Fri Oct  6 11:03:51 2023step 58200, will finish Fri Oct  6 11:03:51 2023step 58300, will finish Fri Oct  6 11:03:51 2023step 58400, will finish Fri Oct  6 11:03:51 2023step 58500, will finish Fri Oct  6 11:03:51 2023step 58600, will finish Fri Oct  6 11:03:51 2023step 58700, will finish Fri Oct  6 11:03:51 2023step 58800, will finish Fri Oct  6 11:03:51 2023step 58900, will finish Fri Oct  6 11:03:51 2023step 59000, will finish Fri Oct  6 11:03:51 2023step 59100, will finish Fri Oct  6 11:03:51 2023step 59200, will finish Fri Oct  6 11:03:51 2023step 59300, will finish Fri Oct  6 11:03:51 2023step 59400, will finish Fri Oct  6 11:03:51 2023step 59500, will finish Fri Oct  6 11:03:51 2023step 59600, will finish Fri Oct  6 11:03:51 2023step 59700, will finish Fri Oct  6 11:03:51 2023step 59800, will finish Fri Oct  6 11:03:51 2023step 59900, will finish Fri Oct  6 11:03:51 2023step 60000, will finish Fri Oct  6 11:03:52 2023step 60100, will finish Fri Oct  6 11:03:51 2023step 60200, will finish Fri Oct  6 11:03:51 2023step 60300, will finish Fri Oct  6 11:03:51 2023step 60400, will finish Fri Oct  6 11:03:51 2023step 60500, will finish Fri Oct  6 11:03:51 2023step 60600, will finish Fri Oct  6 11:03:51 2023step 60700, will finish Fri Oct  6 11:03:51 2023step 60800, will finish Fri Oct  6 11:03:51 2023step 60900, will finish Fri Oct  6 11:03:51 2023step 61000, will finish Fri Oct  6 11:03:51 2023step 61100, will finish Fri Oct  6 11:03:51 2023step 61200, will finish Fri Oct  6 11:03:51 2023step 61300, will finish Fri Oct  6 11:03:51 2023step 61400, will finish Fri Oct  6 11:03:51 2023step 61500, will finish Fri Oct  6 11:03:51 2023step 61600, will finish Fri Oct  6 11:03:51 2023step 61700, will finish Fri Oct  6 11:03:51 2023step 61800, will finish Fri Oct  6 11:03:51 2023step 61900, will finish Fri Oct  6 11:03:51 2023step 62000, will finish Fri Oct  6 11:03:51 2023step 62100, will finish Fri Oct  6 11:03:51 2023step 62200, will finish Fri Oct  6 11:03:51 2023step 62300, will finish Fri Oct  6 11:03:51 2023step 62400, will finish Fri Oct  6 11:03:51 2023step 62500, will finish Fri Oct  6 11:03:51 2023step 62600, will finish Fri Oct  6 11:03:51 2023step 62700, will finish Fri Oct  6 11:03:51 2023step 62800, will finish Fri Oct  6 11:03:51 2023step 62900, will finish Fri Oct  6 11:03:51 2023step 63000, will finish Fri Oct  6 11:03:51 2023step 63100, will finish Fri Oct  6 11:03:51 2023step 63200, will finish Fri Oct  6 11:03:51 2023step 63300, will finish Fri Oct  6 11:03:51 2023step 63400, will finish Fri Oct  6 11:03:51 2023step 63500, will finish Fri Oct  6 11:03:51 2023step 63600, will finish Fri Oct  6 11:03:51 2023step 63700, will finish Fri Oct  6 11:03:51 2023step 63800, will finish Fri Oct  6 11:03:51 2023step 63900, will finish Fri Oct  6 11:03:51 2023step 64000, will finish Fri Oct  6 11:03:51 2023step 64100, will finish Fri Oct  6 11:03:51 2023step 64200, will finish Fri Oct  6 11:03:51 2023step 64300, will finish Fri Oct  6 11:03:51 2023step 64400, will finish Fri Oct  6 11:03:51 2023step 64500, will finish Fri Oct  6 11:03:51 2023step 64600, will finish Fri Oct  6 11:03:51 2023step 64700, will finish Fri Oct  6 11:03:51 2023step 64800, will finish Fri Oct  6 11:03:51 2023step 64900, will finish Fri Oct  6 11:03:51 2023step 65000, will finish Fri Oct  6 11:03:51 2023step 65100, will finish Fri Oct  6 11:03:51 2023step 65200, will finish Fri Oct  6 11:03:51 2023step 65300, will finish Fri Oct  6 11:03:51 2023step 65400, will finish Fri Oct  6 11:03:51 2023step 65500, will finish Fri Oct  6 11:03:51 2023step 65600, will finish Fri Oct  6 11:03:51 2023step 65700, will finish Fri Oct  6 11:03:51 2023step 65800, will finish Fri Oct  6 11:03:51 2023step 65900, will finish Fri Oct  6 11:03:51 2023step 66000, will finish Fri Oct  6 11:03:51 2023step 66100, will finish Fri Oct  6 11:03:51 2023step 66200, will finish Fri Oct  6 11:03:51 2023step 66300, will finish Fri Oct  6 11:03:51 2023step 66400, will finish Fri Oct  6 11:03:51 2023step 66500, will finish Fri Oct  6 11:03:51 2023step 66600, will finish Fri Oct  6 11:03:51 2023step 66700, will finish Fri Oct  6 11:03:51 2023step 66800, will finish Fri Oct  6 11:03:51 2023step 66900, will finish Fri Oct  6 11:03:51 2023step 67000, will finish Fri Oct  6 11:03:51 2023step 67100, will finish Fri Oct  6 11:03:51 2023step 67200, will finish Fri Oct  6 11:03:51 2023step 67300, will finish Fri Oct  6 11:03:51 2023step 67400, will finish Fri Oct  6 11:03:51 2023step 67500, will finish Fri Oct  6 11:03:51 2023step 67600, will finish Fri Oct  6 11:03:51 2023step 67700, will finish Fri Oct  6 11:03:51 2023step 67800, will finish Fri Oct  6 11:03:51 2023step 67900, will finish Fri Oct  6 11:03:51 2023step 68000, will finish Fri Oct  6 11:03:51 2023step 68100, will finish Fri Oct  6 11:03:51 2023step 68200, will finish Fri Oct  6 11:03:52 2023step 68300, will finish Fri Oct  6 11:03:52 2023step 68400, will finish Fri Oct  6 11:03:52 2023step 68500, will finish Fri Oct  6 11:03:52 2023step 68600, will finish Fri Oct  6 11:03:52 2023step 68700, will finish Fri Oct  6 11:03:52 2023step 68800, will finish Fri Oct  6 11:03:52 2023step 68900, will finish Fri Oct  6 11:03:52 2023step 69000, will finish Fri Oct  6 11:03:52 2023step 69100, will finish Fri Oct  6 11:03:52 2023step 69200, will finish Fri Oct  6 11:03:52 2023step 69300, will finish Fri Oct  6 11:03:52 2023step 69400, will finish Fri Oct  6 11:03:52 2023step 69500, will finish Fri Oct  6 11:03:52 2023step 69600, will finish Fri Oct  6 11:03:52 2023step 69700, will finish Fri Oct  6 11:03:52 2023step 69800, will finish Fri Oct  6 11:03:52 2023step 69900, will finish Fri Oct  6 11:03:52 2023step 70000, will finish Fri Oct  6 11:03:52 2023step 70100, will finish Fri Oct  6 11:03:52 2023step 70200, will finish Fri Oct  6 11:03:52 2023step 70300, will finish Fri Oct  6 11:03:52 2023step 70400, will finish Fri Oct  6 11:03:52 2023step 70500, will finish Fri Oct  6 11:03:52 2023step 70600, will finish Fri Oct  6 11:03:52 2023step 70700, will finish Fri Oct  6 11:03:52 2023step 70800, will finish Fri Oct  6 11:03:52 2023step 70900, will finish Fri Oct  6 11:03:53 2023step 71000, will finish Fri Oct  6 11:03:53 2023step 71100, will finish Fri Oct  6 11:03:53 2023step 71200, will finish Fri Oct  6 11:03:53 2023step 71300, will finish Fri Oct  6 11:03:53 2023step 71400, will finish Fri Oct  6 11:03:53 2023step 71500, will finish Fri Oct  6 11:03:53 2023step 71600, will finish Fri Oct  6 11:03:53 2023step 71700, will finish Fri Oct  6 11:03:53 2023step 71800, will finish Fri Oct  6 11:03:53 2023step 71900, will finish Fri Oct  6 11:03:53 2023step 72000, will finish Fri Oct  6 11:03:53 2023step 72100, will finish Fri Oct  6 11:03:53 2023step 72200, will finish Fri Oct  6 11:03:53 2023step 72300, will finish Fri Oct  6 11:03:53 2023step 72400, will finish Fri Oct  6 11:03:53 2023step 72500, will finish Fri Oct  6 11:03:53 2023step 72600, will finish Fri Oct  6 11:03:53 2023step 72700, will finish Fri Oct  6 11:03:53 2023step 72800, will finish Fri Oct  6 11:03:52 2023step 72900, will finish Fri Oct  6 11:03:52 2023step 73000, will finish Fri Oct  6 11:03:52 2023step 73100, will finish Fri Oct  6 11:03:52 2023step 73200, will finish Fri Oct  6 11:03:52 2023step 73300, will finish Fri Oct  6 11:03:52 2023step 73400, will finish Fri Oct  6 11:03:52 2023step 73500, will finish Fri Oct  6 11:03:52 2023step 73600, will finish Fri Oct  6 11:03:52 2023step 73700, will finish Fri Oct  6 11:03:52 2023step 73800, will finish Fri Oct  6 11:03:52 2023step 73900, will finish Fri Oct  6 11:03:52 2023step 74000, will finish Fri Oct  6 11:03:52 2023step 74100, will finish Fri Oct  6 11:03:52 2023step 74200, will finish Fri Oct  6 11:03:52 2023step 74300, will finish Fri Oct  6 11:03:52 2023step 74400, will finish Fri Oct  6 11:03:52 2023step 74500, will finish Fri Oct  6 11:03:52 2023step 74600, will finish Fri Oct  6 11:03:52 2023step 74700, will finish Fri Oct  6 11:03:52 2023step 74800, will finish Fri Oct  6 11:03:52 2023step 74900, will finish Fri Oct  6 11:03:52 2023step 75000, will finish Fri Oct  6 11:03:52 2023step 75100, will finish Fri Oct  6 11:03:52 2023step 75200, will finish Fri Oct  6 11:03:52 2023step 75300, will finish Fri Oct  6 11:03:52 2023step 75400, will finish Fri Oct  6 11:03:52 2023step 75500, will finish Fri Oct  6 11:03:52 2023step 75600, will finish Fri Oct  6 11:03:52 2023step 75700, will finish Fri Oct  6 11:03:52 2023step 75800, will finish Fri Oct  6 11:03:52 2023step 75900, will finish Fri Oct  6 11:03:52 2023step 76000, will finish Fri Oct  6 11:03:52 2023step 76100, will finish Fri Oct  6 11:03:52 2023step 76200, will finish Fri Oct  6 11:03:52 2023step 76300, will finish Fri Oct  6 11:03:52 2023step 76400, will finish Fri Oct  6 11:03:52 2023step 76500, will finish Fri Oct  6 11:03:52 2023step 76600, will finish Fri Oct  6 11:03:52 2023step 76700, will finish Fri Oct  6 11:03:52 2023step 76800, will finish Fri Oct  6 11:03:52 2023step 76900, will finish Fri Oct  6 11:03:53 2023step 77000, will finish Fri Oct  6 11:03:53 2023step 77100, will finish Fri Oct  6 11:03:53 2023step 77200, will finish Fri Oct  6 11:03:53 2023step 77300, will finish Fri Oct  6 11:03:53 2023step 77400, will finish Fri Oct  6 11:03:53 2023step 77500, will finish Fri Oct  6 11:03:52 2023step 77600, will finish Fri Oct  6 11:03:53 2023step 77700, will finish Fri Oct  6 11:03:52 2023step 77800, will finish Fri Oct  6 11:03:52 2023step 77900, will finish Fri Oct  6 11:03:52 2023step 78000, will finish Fri Oct  6 11:03:52 2023step 78100, will finish Fri Oct  6 11:03:52 2023step 78200, will finish Fri Oct  6 11:03:52 2023step 78300, will finish Fri Oct  6 11:03:52 2023step 78400, will finish Fri Oct  6 11:03:52 2023step 78500, will finish Fri Oct  6 11:03:52 2023step 78600, will finish Fri Oct  6 11:03:52 2023step 78700, will finish Fri Oct  6 11:03:52 2023step 78800, will finish Fri Oct  6 11:03:52 2023step 78900, will finish Fri Oct  6 11:03:52 2023step 79000, will finish Fri Oct  6 11:03:52 2023step 79100, will finish Fri Oct  6 11:03:52 2023step 79200, will finish Fri Oct  6 11:03:52 2023step 79300, will finish Fri Oct  6 11:03:52 2023step 79400, will finish Fri Oct  6 11:03:52 2023step 79500, will finish Fri Oct  6 11:03:52 2023step 79600, will finish Fri Oct  6 11:03:52 2023step 79700, will finish Fri Oct  6 11:03:53 2023step 79800, will finish Fri Oct  6 11:03:52 2023step 79900, will finish Fri Oct  6 11:03:52 2023step 80000, will finish Fri Oct  6 11:03:52 2023step 80100, will finish Fri Oct  6 11:03:52 2023step 80200, will finish Fri Oct  6 11:03:52 2023step 80300, will finish Fri Oct  6 11:03:52 2023step 80400, will finish Fri Oct  6 11:03:52 2023step 80500, will finish Fri Oct  6 11:03:52 2023step 80600, will finish Fri Oct  6 11:03:52 2023step 80700, will finish Fri Oct  6 11:03:52 2023step 80800, will finish Fri Oct  6 11:03:52 2023step 80900, will finish Fri Oct  6 11:03:52 2023step 81000, will finish Fri Oct  6 11:03:52 2023step 81100, will finish Fri Oct  6 11:03:52 2023step 81200, will finish Fri Oct  6 11:03:52 2023step 81300, will finish Fri Oct  6 11:03:52 2023step 81400, will finish Fri Oct  6 11:03:52 2023step 81500, will finish Fri Oct  6 11:03:52 2023step 81600, will finish Fri Oct  6 11:03:52 2023step 81700, will finish Fri Oct  6 11:03:52 2023step 81800, will finish Fri Oct  6 11:03:52 2023step 81900, will finish Fri Oct  6 11:03:52 2023step 82000, will finish Fri Oct  6 11:03:52 2023step 82100, will finish Fri Oct  6 11:03:52 2023step 82200, will finish Fri Oct  6 11:03:52 2023step 82300, will finish Fri Oct  6 11:03:52 2023step 82400, will finish Fri Oct  6 11:03:52 2023step 82500, will finish Fri Oct  6 11:03:52 2023step 82600, will finish Fri Oct  6 11:03:52 2023step 82700, will finish Fri Oct  6 11:03:52 2023step 82800, will finish Fri Oct  6 11:03:52 2023step 82900, will finish Fri Oct  6 11:03:52 2023step 83000, will finish Fri Oct  6 11:03:52 2023step 83100, will finish Fri Oct  6 11:03:52 2023step 83200, will finish Fri Oct  6 11:03:52 2023step 83300, will finish Fri Oct  6 11:03:52 2023step 83400, will finish Fri Oct  6 11:03:52 2023step 83500, will finish Fri Oct  6 11:03:52 2023step 83600, will finish Fri Oct  6 11:03:52 2023step 83700, will finish Fri Oct  6 11:03:52 2023step 83800, will finish Fri Oct  6 11:03:52 2023step 83900, will finish Fri Oct  6 11:03:52 2023step 84000, will finish Fri Oct  6 11:03:52 2023step 84100, will finish Fri Oct  6 11:03:52 2023step 84200, will finish Fri Oct  6 11:03:52 2023step 84300, will finish Fri Oct  6 11:03:52 2023step 84400, will finish Fri Oct  6 11:03:52 2023step 84500, will finish Fri Oct  6 11:03:52 2023step 84600, will finish Fri Oct  6 11:03:52 2023step 84700, will finish Fri Oct  6 11:03:52 2023step 84800, will finish Fri Oct  6 11:03:52 2023step 84900, will finish Fri Oct  6 11:03:52 2023step 85000, will finish Fri Oct  6 11:03:52 2023step 85100, will finish Fri Oct  6 11:03:52 2023step 85200, will finish Fri Oct  6 11:03:52 2023step 85300, will finish Fri Oct  6 11:03:52 2023step 85400, will finish Fri Oct  6 11:03:52 2023step 85500, will finish Fri Oct  6 11:03:52 2023step 85600, will finish Fri Oct  6 11:03:52 2023step 85700, will finish Fri Oct  6 11:03:52 2023step 85800, will finish Fri Oct  6 11:03:52 2023step 85900, will finish Fri Oct  6 11:03:52 2023step 86000, will finish Fri Oct  6 11:03:52 2023step 86100, will finish Fri Oct  6 11:03:52 2023step 86200, will finish Fri Oct  6 11:03:52 2023step 86300, will finish Fri Oct  6 11:03:52 2023step 86400, will finish Fri Oct  6 11:03:52 2023step 86500, will finish Fri Oct  6 11:03:52 2023step 86600, will finish Fri Oct  6 11:03:52 2023step 86700, will finish Fri Oct  6 11:03:52 2023step 86800, will finish Fri Oct  6 11:03:52 2023step 86900, will finish Fri Oct  6 11:03:52 2023step 87000, will finish Fri Oct  6 11:03:52 2023step 87100, will finish Fri Oct  6 11:03:52 2023step 87200, will finish Fri Oct  6 11:03:52 2023step 87300, will finish Fri Oct  6 11:03:52 2023step 87400, will finish Fri Oct  6 11:03:52 2023step 87500, will finish Fri Oct  6 11:03:52 2023step 87600, will finish Fri Oct  6 11:03:52 2023step 87700, will finish Fri Oct  6 11:03:52 2023step 87800, will finish Fri Oct  6 11:03:52 2023step 87900, will finish Fri Oct  6 11:03:52 2023step 88000, will finish Fri Oct  6 11:03:52 2023step 88100, will finish Fri Oct  6 11:03:52 2023step 88200, will finish Fri Oct  6 11:03:52 2023step 88300, will finish Fri Oct  6 11:03:52 2023step 88400, will finish Fri Oct  6 11:03:52 2023step 88500, will finish Fri Oct  6 11:03:52 2023step 88600, will finish Fri Oct  6 11:03:52 2023step 88700, will finish Fri Oct  6 11:03:52 2023step 88800, will finish Fri Oct  6 11:03:52 2023step 88900, will finish Fri Oct  6 11:03:52 2023step 89000, will finish Fri Oct  6 11:03:52 2023step 89100, will finish Fri Oct  6 11:03:52 2023step 89200, will finish Fri Oct  6 11:03:52 2023step 89300, will finish Fri Oct  6 11:03:52 2023step 89400, will finish Fri Oct  6 11:03:52 2023step 89500, will finish Fri Oct  6 11:03:52 2023step 89600, will finish Fri Oct  6 11:03:52 2023step 89700, will finish Fri Oct  6 11:03:52 2023step 89800, will finish Fri Oct  6 11:03:52 2023step 89900, will finish Fri Oct  6 11:03:52 2023step 90000, will finish Fri Oct  6 11:03:52 2023step 90100, will finish Fri Oct  6 11:03:52 2023step 90200, will finish Fri Oct  6 11:03:52 2023step 90300, will finish Fri Oct  6 11:03:52 2023step 90400, will finish Fri Oct  6 11:03:52 2023step 90500, will finish Fri Oct  6 11:03:52 2023step 90600, will finish Fri Oct  6 11:03:52 2023step 90700, will finish Fri Oct  6 11:03:52 2023step 90800, will finish Fri Oct  6 11:03:52 2023step 90900, will finish Fri Oct  6 11:03:52 2023step 91000, will finish Fri Oct  6 11:03:52 2023step 91100, will finish Fri Oct  6 11:03:52 2023step 91200, will finish Fri Oct  6 11:03:52 2023step 91300, will finish Fri Oct  6 11:03:52 2023step 91400, will finish Fri Oct  6 11:03:52 2023step 91500, will finish Fri Oct  6 11:03:52 2023step 91600, will finish Fri Oct  6 11:03:52 2023step 91700, will finish Fri Oct  6 11:03:52 2023step 91800, will finish Fri Oct  6 11:03:52 2023step 91900, will finish Fri Oct  6 11:03:52 2023step 92000, will finish Fri Oct  6 11:03:52 2023step 92100, will finish Fri Oct  6 11:03:52 2023step 92200, will finish Fri Oct  6 11:03:52 2023step 92300, will finish Fri Oct  6 11:03:52 2023step 92400, will finish Fri Oct  6 11:03:52 2023step 92500, will finish Fri Oct  6 11:03:52 2023step 92600, will finish Fri Oct  6 11:03:52 2023step 92700, will finish Fri Oct  6 11:03:52 2023step 92800, will finish Fri Oct  6 11:03:52 2023step 92900, will finish Fri Oct  6 11:03:52 2023step 93000, will finish Fri Oct  6 11:03:52 2023step 93100, will finish Fri Oct  6 11:03:52 2023step 93200, will finish Fri Oct  6 11:03:52 2023step 93300, will finish Fri Oct  6 11:03:52 2023step 93400, will finish Fri Oct  6 11:03:52 2023step 93500, will finish Fri Oct  6 11:03:52 2023step 93600, will finish Fri Oct  6 11:03:52 2023step 93700, will finish Fri Oct  6 11:03:52 2023step 93800, will finish Fri Oct  6 11:03:52 2023step 93900, will finish Fri Oct  6 11:03:52 2023step 94000, will finish Fri Oct  6 11:03:52 2023step 94100, will finish Fri Oct  6 11:03:52 2023step 94200, will finish Fri Oct  6 11:03:52 2023step 94300, will finish Fri Oct  6 11:03:52 2023step 94400, will finish Fri Oct  6 11:03:52 2023step 94500, will finish Fri Oct  6 11:03:52 2023step 94600, will finish Fri Oct  6 11:03:52 2023step 94700, will finish Fri Oct  6 11:03:52 2023step 94800, will finish Fri Oct  6 11:03:52 2023step 94900, will finish Fri Oct  6 11:03:52 2023step 95000, will finish Fri Oct  6 11:03:52 2023step 95100, will finish Fri Oct  6 11:03:52 2023step 95200, will finish Fri Oct  6 11:03:52 2023step 95300, will finish Fri Oct  6 11:03:52 2023step 95400, will finish Fri Oct  6 11:03:52 2023step 95500, will finish Fri Oct  6 11:03:52 2023step 95600, will finish Fri Oct  6 11:03:52 2023step 95700, will finish Fri Oct  6 11:03:52 2023step 95800, will finish Fri Oct  6 11:03:52 2023step 95900, will finish Fri Oct  6 11:03:52 2023step 96000, will finish Fri Oct  6 11:03:52 2023step 96100, will finish Fri Oct  6 11:03:52 2023step 96200, will finish Fri Oct  6 11:03:52 2023step 96300, will finish Fri Oct  6 11:03:52 2023step 96400, will finish Fri Oct  6 11:03:52 2023step 96500, will finish Fri Oct  6 11:03:52 2023step 96600, will finish Fri Oct  6 11:03:52 2023step 96700, will finish Fri Oct  6 11:03:52 2023step 96800, will finish Fri Oct  6 11:03:52 2023step 96900, will finish Fri Oct  6 11:03:52 2023step 97000, will finish Fri Oct  6 11:03:52 2023step 97100, will finish Fri Oct  6 11:03:52 2023step 97200, will finish Fri Oct  6 11:03:52 2023step 97300, will finish Fri Oct  6 11:03:52 2023step 97400, will finish Fri Oct  6 11:03:52 2023step 97500, will finish Fri Oct  6 11:03:52 2023step 97600, will finish Fri Oct  6 11:03:52 2023step 97700, will finish Fri Oct  6 11:03:52 2023step 97800, will finish Fri Oct  6 11:03:52 2023step 97900, will finish Fri Oct  6 11:03:52 2023step 98000, will finish Fri Oct  6 11:03:52 2023step 98100, will finish Fri Oct  6 11:03:52 2023step 98200, will finish Fri Oct  6 11:03:52 2023step 98300, will finish Fri Oct  6 11:03:52 2023step 98400, will finish Fri Oct  6 11:03:52 2023step 98500, will finish Fri Oct  6 11:03:52 2023step 98600, will finish Fri Oct  6 11:03:52 2023step 98700, will finish Fri Oct  6 11:03:52 2023step 98800, will finish Fri Oct  6 11:03:52 2023step 98900, will finish Fri Oct  6 11:03:52 2023step 99000, will finish Fri Oct  6 11:03:52 2023step 99100, will finish Fri Oct  6 11:03:52 2023step 99200, will finish Fri Oct  6 11:03:52 2023step 99300, will finish Fri Oct  6 11:03:52 2023step 99400, will finish Fri Oct  6 11:03:52 2023step 99500, will finish Fri Oct  6 11:03:52 2023step 99600, will finish Fri Oct  6 11:03:52 2023step 99700, will finish Fri Oct  6 11:03:52 2023step 99800, will finish Fri Oct  6 11:03:52 2023step 99900, will finish Fri Oct  6 11:03:52 2023step 100000, will finish Fri Oct  6 11:03:52 2023step 100100, will finish Fri Oct  6 11:03:52 2023step 100200, will finish Fri Oct  6 11:03:52 2023step 100300, will finish Fri Oct  6 11:03:52 2023step 100400, will finish Fri Oct  6 11:03:52 2023step 100500, will finish Fri Oct  6 11:03:52 2023step 100600, will finish Fri Oct  6 11:03:51 2023step 100700, will finish Fri Oct  6 11:03:51 2023step 100800, will finish Fri Oct  6 11:03:51 2023step 100900, will finish Fri Oct  6 11:03:51 2023step 101000, will finish Fri Oct  6 11:03:51 2023step 101100, will finish Fri Oct  6 11:03:51 2023step 101200, will finish Fri Oct  6 11:03:51 2023step 101300, will finish Fri Oct  6 11:03:51 2023step 101400, will finish Fri Oct  6 11:03:51 2023step 101500, will finish Fri Oct  6 11:03:51 2023step 101600, will finish Fri Oct  6 11:03:51 2023step 101700, will finish Fri Oct  6 11:03:52 2023step 101800, will finish Fri Oct  6 11:03:52 2023step 101900, will finish Fri Oct  6 11:03:52 2023step 102000, will finish Fri Oct  6 11:03:52 2023step 102100, will finish Fri Oct  6 11:03:52 2023step 102200, will finish Fri Oct  6 11:03:52 2023step 102300, will finish Fri Oct  6 11:03:52 2023step 102400, will finish Fri Oct  6 11:03:52 2023step 102500, will finish Fri Oct  6 11:03:52 2023step 102600, will finish Fri Oct  6 11:03:52 2023step 102700, will finish Fri Oct  6 11:03:52 2023step 102800, will finish Fri Oct  6 11:03:52 2023step 102900, will finish Fri Oct  6 11:03:52 2023step 103000, will finish Fri Oct  6 11:03:52 2023step 103100, will finish Fri Oct  6 11:03:51 2023step 103200, will finish Fri Oct  6 11:03:51 2023step 103300, will finish Fri Oct  6 11:03:51 2023step 103400, will finish Fri Oct  6 11:03:51 2023step 103500, will finish Fri Oct  6 11:03:51 2023step 103600, will finish Fri Oct  6 11:03:51 2023step 103700, will finish Fri Oct  6 11:03:51 2023step 103800, will finish Fri Oct  6 11:03:52 2023step 103900, will finish Fri Oct  6 11:03:51 2023step 104000, will finish Fri Oct  6 11:03:52 2023step 104100, will finish Fri Oct  6 11:03:52 2023step 104200, will finish Fri Oct  6 11:03:52 2023step 104300, will finish Fri Oct  6 11:03:52 2023step 104400, will finish Fri Oct  6 11:03:52 2023step 104500, will finish Fri Oct  6 11:03:52 2023step 104600, will finish Fri Oct  6 11:03:52 2023step 104700, will finish Fri Oct  6 11:03:52 2023step 104800, will finish Fri Oct  6 11:03:52 2023step 104900, will finish Fri Oct  6 11:03:52 2023step 105000, will finish Fri Oct  6 11:03:52 2023step 105100, will finish Fri Oct  6 11:03:52 2023step 105200, will finish Fri Oct  6 11:03:52 2023step 105300, will finish Fri Oct  6 11:03:52 2023step 105400, will finish Fri Oct  6 11:03:52 2023step 105500, will finish Fri Oct  6 11:03:52 2023step 105600, will finish Fri Oct  6 11:03:52 2023step 105700, will finish Fri Oct  6 11:03:52 2023step 105800, will finish Fri Oct  6 11:03:52 2023step 105900, will finish Fri Oct  6 11:03:52 2023step 106000, will finish Fri Oct  6 11:03:52 2023step 106100, will finish Fri Oct  6 11:03:52 2023step 106200, will finish Fri Oct  6 11:03:52 2023step 106300, will finish Fri Oct  6 11:03:52 2023step 106400, will finish Fri Oct  6 11:03:52 2023step 106500, will finish Fri Oct  6 11:03:52 2023step 106600, will finish Fri Oct  6 11:03:52 2023step 106700, will finish Fri Oct  6 11:03:52 2023step 106800, will finish Fri Oct  6 11:03:52 2023step 106900, will finish Fri Oct  6 11:03:52 2023step 107000, will finish Fri Oct  6 11:03:52 2023step 107100, will finish Fri Oct  6 11:03:52 2023step 107200, will finish Fri Oct  6 11:03:52 2023step 107300, will finish Fri Oct  6 11:03:52 2023step 107400, will finish Fri Oct  6 11:03:52 2023step 107500, will finish Fri Oct  6 11:03:52 2023step 107600, will finish Fri Oct  6 11:03:52 2023step 107700, will finish Fri Oct  6 11:03:52 2023step 107800, will finish Fri Oct  6 11:03:52 2023step 107900, will finish Fri Oct  6 11:03:52 2023step 108000, will finish Fri Oct  6 11:03:52 2023step 108100, will finish Fri Oct  6 11:03:52 2023step 108200, will finish Fri Oct  6 11:03:52 2023step 108300, will finish Fri Oct  6 11:03:52 2023step 108400, will finish Fri Oct  6 11:03:52 2023step 108500, will finish Fri Oct  6 11:03:52 2023step 108600, will finish Fri Oct  6 11:03:52 2023step 108700, will finish Fri Oct  6 11:03:52 2023step 108800, will finish Fri Oct  6 11:03:52 2023step 108900, will finish Fri Oct  6 11:03:52 2023step 109000, will finish Fri Oct  6 11:03:52 2023step 109100, will finish Fri Oct  6 11:03:52 2023step 109200, will finish Fri Oct  6 11:03:52 2023step 109300, will finish Fri Oct  6 11:03:52 2023step 109400, will finish Fri Oct  6 11:03:52 2023step 109500, will finish Fri Oct  6 11:03:52 2023step 109600, will finish Fri Oct  6 11:03:52 2023step 109700, will finish Fri Oct  6 11:03:52 2023step 109800, will finish Fri Oct  6 11:03:52 2023step 109900, will finish Fri Oct  6 11:03:52 2023step 110000, will finish Fri Oct  6 11:03:52 2023step 110100, remaining wall clock time:   299 s          step 110200, remaining wall clock time:   297 s          step 110300, remaining wall clock time:   295 s          step 110400, remaining wall clock time:   293 s          step 110500, remaining wall clock time:   291 s          step 110600, remaining wall clock time:   289 s          step 110700, remaining wall clock time:   287 s          step 110800, remaining wall clock time:   285 s          step 110900, remaining wall clock time:   283 s          step 111000, remaining wall clock time:   281 s          step 111100, remaining wall clock time:   279 s          step 111200, remaining wall clock time:   277 s          step 111300, remaining wall clock time:   275 s          step 111400, remaining wall clock time:   273 s          step 111500, remaining wall clock time:   271 s          step 111600, remaining wall clock time:   269 s          step 111700, remaining wall clock time:   267 s          step 111800, remaining wall clock time:   265 s          step 111900, remaining wall clock time:   263 s          step 112000, remaining wall clock time:   261 s          step 112100, remaining wall clock time:   259 s          step 112200, remaining wall clock time:   257 s          step 112300, remaining wall clock time:   255 s          step 112400, remaining wall clock time:   253 s          step 112500, remaining wall clock time:   251 s          step 112600, remaining wall clock time:   249 s          step 112700, remaining wall clock time:   247 s          step 112800, remaining wall clock time:   245 s          step 112900, remaining wall clock time:   243 s          step 113000, remaining wall clock time:   241 s          step 113100, remaining wall clock time:   239 s          step 113200, remaining wall clock time:   237 s          step 113300, remaining wall clock time:   235 s          step 113400, remaining wall clock time:   233 s          step 113500, remaining wall clock time:   231 s          step 113600, remaining wall clock time:   229 s          step 113700, remaining wall clock time:   227 s          step 113800, remaining wall clock time:   225 s          step 113900, remaining wall clock time:   223 s          step 114000, remaining wall clock time:   221 s          step 114100, remaining wall clock time:   219 s          step 114200, remaining wall clock time:   217 s          step 114300, remaining wall clock time:   215 s          step 114400, remaining wall clock time:   213 s          step 114500, remaining wall clock time:   211 s          step 114600, remaining wall clock time:   209 s          step 114700, remaining wall clock time:   207 s          step 114800, remaining wall clock time:   205 s          step 114900, remaining wall clock time:   203 s          step 115000, remaining wall clock time:   201 s          step 115100, remaining wall clock time:   199 s          step 115200, remaining wall clock time:   197 s          step 115300, remaining wall clock time:   195 s          step 115400, remaining wall clock time:   193 s          step 115500, remaining wall clock time:   191 s          step 115600, remaining wall clock time:   189 s          step 115700, remaining wall clock time:   187 s          step 115800, remaining wall clock time:   185 s          step 115900, remaining wall clock time:   183 s          step 116000, remaining wall clock time:   181 s          step 116100, remaining wall clock time:   178 s          step 116200, remaining wall clock time:   176 s          step 116300, remaining wall clock time:   174 s          step 116400, remaining wall clock time:   172 s          step 116500, remaining wall clock time:   170 s          step 116600, remaining wall clock time:   168 s          step 116700, remaining wall clock time:   166 s          step 116800, remaining wall clock time:   164 s          step 116900, remaining wall clock time:   162 s          step 117000, remaining wall clock time:   160 s          step 117100, remaining wall clock time:   158 s          step 117200, remaining wall clock time:   156 s          step 117300, remaining wall clock time:   154 s          step 117400, remaining wall clock time:   152 s          step 117500, remaining wall clock time:   150 s          step 117600, remaining wall clock time:   148 s          step 117700, remaining wall clock time:   146 s          step 117800, remaining wall clock time:   144 s          step 117900, remaining wall clock time:   142 s          step 118000, remaining wall clock time:   140 s          step 118100, remaining wall clock time:   138 s          step 118200, remaining wall clock time:   136 s          step 118300, remaining wall clock time:   134 s          step 118400, remaining wall clock time:   132 s          step 118500, remaining wall clock time:   130 s          step 118600, remaining wall clock time:   128 s          step 118700, remaining wall clock time:   126 s          step 118800, remaining wall clock time:   124 s          step 118900, remaining wall clock time:   122 s          step 119000, remaining wall clock time:   120 s          step 119100, remaining wall clock time:   118 s          step 119200, remaining wall clock time:   116 s          step 119300, remaining wall clock time:   114 s          step 119400, remaining wall clock time:   112 s          step 119500, remaining wall clock time:   110 s          step 119600, remaining wall clock time:   108 s          step 119700, remaining wall clock time:   106 s          step 119800, remaining wall clock time:   104 s          step 119900, remaining wall clock time:   102 s          step 120000, remaining wall clock time:   100 s          step 120100, remaining wall clock time:    98 s          step 120200, remaining wall clock time:    96 s          step 120300, remaining wall clock time:    94 s          step 120400, remaining wall clock time:    92 s          step 120500, remaining wall clock time:    90 s          step 120600, remaining wall clock time:    88 s          step 120700, remaining wall clock time:    86 s          step 120800, remaining wall clock time:    84 s          step 120900, remaining wall clock time:    82 s          step 121000, remaining wall clock time:    80 s          step 121100, remaining wall clock time:    78 s          step 121200, remaining wall clock time:    76 s          step 121300, remaining wall clock time:    74 s          step 121400, remaining wall clock time:    72 s          step 121500, remaining wall clock time:    70 s          step 121600, remaining wall clock time:    68 s          step 121700, remaining wall clock time:    66 s          step 121800, remaining wall clock time:    64 s          step 121900, remaining wall clock time:    62 s          step 122000, remaining wall clock time:    60 s          step 122100, remaining wall clock time:    58 s          step 122200, remaining wall clock time:    56 s          step 122300, remaining wall clock time:    54 s          step 122400, remaining wall clock time:    52 s          step 122500, remaining wall clock time:    50 s          step 122600, remaining wall clock time:    48 s          step 122700, remaining wall clock time:    46 s          step 122800, remaining wall clock time:    44 s          step 122900, remaining wall clock time:    42 s          step 123000, remaining wall clock time:    40 s          step 123100, remaining wall clock time:    38 s          step 123200, remaining wall clock time:    36 s          step 123300, remaining wall clock time:    34 s          step 123400, remaining wall clock time:    32 s          step 123500, remaining wall clock time:    30 s          step 123600, remaining wall clock time:    28 s          step 123700, remaining wall clock time:    26 s          step 123800, remaining wall clock time:    24 s          step 123900, remaining wall clock time:    22 s          step 124000, remaining wall clock time:    20 s          step 124100, remaining wall clock time:    18 s          step 124200, remaining wall clock time:    16 s          step 124300, remaining wall clock time:    14 s          step 124400, remaining wall clock time:    12 s          step 124500, remaining wall clock time:    10 s          step 124600, remaining wall clock time:     8 s          step 124700, remaining wall clock time:     6 s          step 124800, remaining wall clock time:     4 s          step 124900, remaining wall clock time:     2 s          
+Writing final coordinates.
+step 125000, remaining wall clock time:     0 s          
+               Core t (s)   Wall t (s)        (%)
+       Time:     2514.492     2514.492      100.0
+                         41:54
+                 (ns/day)    (hour/ns)
+Performance:        4.295        5.588
+
+GROMACS reminds you: "Aber wenn der Quarterback kommt, um dir die Brille abzunehmen, sag ihm: Danke, die bleibt wo sie ist" (Wir sind Helden)
+
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_1.tpr -c step4.1_equilibration.gro -p topol.top -n index.ndx
+
+
+ERROR 1 [file step5_production.mdp, line 35]:
+  Parameter "nstvout" doubly defined
+
+
+
+ERROR 2 [file step5_production.mdp, line 36]:
+  Parameter "nstfout" doubly defined
+
+
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/fileio/readinp.cpp (line 245)
+
+Fatal error:
+There were 2 errors in input file(s)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_1
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_2.tpr -c step5_1.gro -t step5_1.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_1.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_1.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_2
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_3.tpr -c step5_2.gro -t step5_2.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_2.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_2.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_3
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_4.tpr -c step5_3.gro -t step5_3.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_3.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_3.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_4
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_5.tpr -c step5_4.gro -t step5_4.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_4.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_4.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_5
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_6.tpr -c step5_5.gro -t step5_5.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_5.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_5.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_6
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_7.tpr -c step5_6.gro -t step5_6.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_6.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_6.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_7
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_8.tpr -c step5_7.gro -t step5_7.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_7.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_7.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_8
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx grompp, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi grompp -f step5_production.mdp -o step5_9.tpr -c step5_8.gro -t step5_8.cpt -p topol.top -n index.ndx
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2020.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 275)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'step5_8.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+  In command-line option -t
+    File 'step5_8.cpt' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2023fa/students/tje3676/comp-lab-class/Week4/water-box_CHARMM/gromacs
+Command line:
+  gmx_mpi mdrun -v -deffnm step5_9
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2020.4
+Source file: src/gromacs/options/options.cpp (line 179)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
