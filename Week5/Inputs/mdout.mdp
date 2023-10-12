@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: tje3676 (4098587)
 ;	On host: log-3
-;	At date: Fri Oct  6 19:58:24 2023
+;	At date: Thu Oct 12 15:34:55 2023
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2018.3 (-:
@@ -163,7 +163,7 @@ print-nose-hoover-chain-variables = no
 tc_grps                  = system
 ; Time constant (ps) and reference temperature (K)
 tau_t                    = 0.1
-ref_t                    = 300.000
+ref_t                    = 440.000
 ; pressure coupling     
 Pcoupl                   = no
 pcoupltype               = Isotropic

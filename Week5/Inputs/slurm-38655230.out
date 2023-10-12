@@ -1,7 +1,0 @@
-s
-un: error: ioctl(TIOCGWINSZ): Inappropriate ioctl for device
-srun: error: Not using a pseudo-terminal, disregarding --pty option
-srun: error: CPU binding outside of job step allocation, allocated CPUs are: 0x400000600000.
-srun: error: Task launch for StepId=38655230.0 failed on node cs016: Unable to satisfy cpu bind request
-srun: error: Application launch failed: Unable to satisfy cpu bind request
-srun: Job step aborted
